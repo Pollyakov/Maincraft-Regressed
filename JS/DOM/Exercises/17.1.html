@@ -1,0 +1,37 @@
+<!-- // Create a webpage that has some text and two buttons with ‘+’ and ‘-‘
+// Clicking the ‘+’ button should increase the text’s font-size and clicking the ‘-‘
+// should decrease it.
+// Limit the font size to be between 6px and 100px. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <style>
+          .big{
+              font-size: 25px;
+          }
+      </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Toggling a size of text</h1>
+    <p class="text ">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
+      sunt necessitatibus, obcaecati in deserunt quos commodi, libero ipsum
+      doloribus id fugiat culpa expedita maiores, odio facere eligendi sit rem
+      debitis! 
+    </p>
+  </body>
+  <script>
+    function changeTextSize() {
+        text.classList.toggle('big');
+    };
+    const text = document.querySelector('.text');
+    text.classList.add("big");
+    console.log(text.classList);
+    text.addEventListener('click', changeTextSize);
+  </script>
+</html>

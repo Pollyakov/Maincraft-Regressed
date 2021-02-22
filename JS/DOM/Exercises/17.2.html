@@ -1,0 +1,44 @@
+<!-- // Create a webpage that has some text and two buttons with ‘+’ and ‘-‘
+// Clicking the ‘+’ button should increase the text’s font-size and clicking the ‘-‘
+// should decrease it.
+// Limit the font size to be between 6px and 100px. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .text {
+        height: 200px;
+      }
+      .hidden {
+        visibility: hidden;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Why are you interested in this position?</h1>
+    <label for="textarea" class="hidden">Please enter more then 100 symbols.</label>
+    <br />
+    <textarea class="text"> </textarea>
+    <br />
+    <button type="button" onclick="showMsg()">Click here!</button>
+
+    <script>
+      function showMsg() {
+        
+        myLabel.classList.toggle("hidden");
+      };
+      const myButton = document.querySelector("button");
+      const myLabel = document.querySelector("label");
+      const myTextArea = document.querySelector("textarea");
+    </script>
+
+  </body>
+
+  
+</html>
