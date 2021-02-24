@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>title 1</li>
+      <li class="start-here">title 2</li>
+      <li>
+        <ul>
+          <li>sub title 1</li>
+          <li>sub title 2</li>
+          <li>sub title 3</li>
+        </ul>
+      </li>
+      <li>title 3</li>
+    </ul>
+    <div>
+      <p>Hello World!</p>
+    </div>
+  </body>
+  <script>
+    myLI = document.querySelector("li.start-here");
+    console.log(myLI);
+    myLI.textContent ='main title';
+    const myLINextSibling = myLI.nextElementSibling;
+    console.log(myLINextSibling);
+    myUL = myLINextSibling.firstElementChild;
+    console.log(myUL);
+  
+    const subTitle = document.createElement("li");
+    const subTitleText = document.createTextNode("sub-title 4");
+    subTitle.appendChild(subTitleText);
+    myUL.appendChild(subTitle);
+
+    const myLiParent = myLi.parentElement;
+    myLiParent.lastElementChild.remove();
+
+
+
+
+
+
+
+
+
+
+  </script>
+</html>
