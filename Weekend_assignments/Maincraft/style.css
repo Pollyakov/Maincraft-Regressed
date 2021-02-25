@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0xp;
+}
+
+.start {
+        background: url(./media/image_cover.jpg) no-repeat center center fixed;
+        background-size: cover;
+        height: 80vh;
+        overflow: hidden;
+        position: relative;
+        
+}
+.tool-bar {
+    height: 20vh;
+    background: black;
+    width: 100wh;
+}
+.start-btn {
+    width: 20vw;
+    height: 5vh;
+    border: 2px black solid;
+    background: white;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top:50vh;
+    font-size:larger;      
+} 
+                                             

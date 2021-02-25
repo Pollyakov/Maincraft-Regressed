@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      const users = [
+  {
+    id: 167464,
+    firstName: "Jimmy",
+    lastName: "Arnold",
+    email: "jimmya@gmail.com",
+  },
+  {
+    id: 578447,
+    firstName: "Martha",
+    lastName: "Goldman",
+    email: "gold@hotmail.com",
+  },
+  {
+    id: 864578,
+    firstName: "Tim",
+    lastName: "Burton",
+    email: "timmy.hotmail.com",
+  },
+];
+// Loop over the array with the forEach method and dynamically
+// create an ordered list of the first and last names from the objects.
+const myUl = document.createElement('ol');
+document.body.appendChild(myUl);
+myUl.textContent= 'dgfdfgdg';
+users.forEach((obj,index,arr)=>{
+      const myLi = document.createElement("li");
+      myLi.dataset.id= index;
+      myLi.textContent= obj.firstName + ' '+ obj.lastName;
+      myUl.appendChild(myLi);
+      console.log(myLi);   
+});
+//Create a custom data attribute called “data-id” and attach the id
+// value to each li.
+
+  </script>
+</body>
+</html>

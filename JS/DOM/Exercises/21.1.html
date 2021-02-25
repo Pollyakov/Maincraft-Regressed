@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input">what is your age?</label>
+     <br>
+    <input type="text"/>
+    <button>Enter</button>
+    <h1 class="alert"></h1>
+   
+    <script>
+        const myInput = document.querySelector("input");
+        console.log(myInput);
+        const myBtn = document.querySelector("button");
+        //age validation
+        const handleInput = (e)=> {
+            const myAlert = document.querySelector('h1');
+            let age = parseInt(myInput.value);
+            console.log('age ', age);
+            if (age < 18) {
+                myAlert.textContent = "You are too young"}
+                else {myAlert.textContent="You are allowed to drink"}
+            }
+        
+        myBtn.addEventListener("click", handleInput);
+    </script>
+</body>
+</html>
