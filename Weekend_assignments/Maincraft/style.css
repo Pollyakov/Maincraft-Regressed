@@ -25,21 +25,28 @@
      border: solid  2px whitesmoke; 
      margin: 2.5vh;
  }
+ .tool:hover {
+    border: 3px solid red;
+ }
+
   .inventory {
       height: 8vh;
       margin: 5vh;
       width: 8vh;
       border: solid 2px whitesmoke;
   }
+  .inventory:hover {
+    border: 5px solid red;
+  }
 
 .axe {
-    background: url(./media/axe.png) no-repeat center center/cover;
+    background: url(./media/axe1.png) no-repeat center center/cover;
 }
 .shovel {
-    background: url(./media/shovel.png) no-repeat center center/cover;
+    background: url(./media/shovel1.png) no-repeat center center/cover;
 }
 .pickaxe {
-    background: url(./media/pickaxe.png) no-repeat center center/cover;
+    background: url(./media/pickaxe1.png) no-repeat center center/cover;
 }
 
 .start-btn {
