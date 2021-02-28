@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="element">sfsd</div>
+    <script>
+      //1. this will be window or undefined in use strict mode
+      console.log(this);
+
+     // 2. arrow functions do not get their own this keyword
+    //  we can use normal function instead
+      const myObj = {
+        name: "Timmy",
+        greet: function () {
+          console.log(`Hello ${this.name}`);
+        },
+      };
+      myObj.greet();
+
+      //3. myFuncDec is the owner
+      const myFuncDec = function () {
+             console.log(this);
+};
+
+   //4. global
+   const myFuncArrow = () => {
+ console.log(this);
+};
+myFuncArrow();
+
+//5`normal functions, the this will get binded to who ever called then.
+//arrow function has not binding.
+//this = window
+document.querySelector(".element").addEventListener("click", () => {
+ console.log(this);
+});
+
+
+    </script>
+  </body>
+</html>
