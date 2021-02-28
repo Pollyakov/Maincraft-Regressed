@@ -1,6 +1,11 @@
 
-// const start = document.querySelector(".start");
-// console.log(start);
+//VARIABLES:
+
+const body = document.querySelector('body');
+const nTiles = 20;
+
+
+
 const startSelfDelete = () => {
     let start = document.querySelector(".start");
     start.remove();

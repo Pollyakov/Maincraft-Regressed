@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0xp;
 }
-
 .start {
         background: url(./media/image_cover.jpg) no-repeat center center fixed;
         background-size: cover;
@@ -17,7 +16,6 @@
     width: 100wh;
     display: flex;
     justify-content: center;
-
 }
  .tool {
      height: 15vh;
@@ -28,17 +26,15 @@
  .tool:hover {
     border: 3px solid red;
  }
-
-  .inventory {
+  .inventoryTile {
       height: 8vh;
       margin: 5vh;
       width: 8vh;
       border: solid 2px whitesmoke;
   }
-  .inventory:hover {
+  .inventoryTile:hover {
     border: 5px solid red;
   }
-
 .axe {
     background: url(./media/axe1.png) no-repeat center center/cover;
 }
@@ -48,7 +44,6 @@
 .pickaxe {
     background: url(./media/pickaxe1.png) no-repeat center center/cover;
 }
-
 .start-btn {
     width: 20vw;
     height: 5vh;

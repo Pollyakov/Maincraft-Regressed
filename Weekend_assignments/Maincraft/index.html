@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maincraft</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="raster_init.js"></script>
+    <script src="./script.js" defer ></script>
+    
   </head>
   <body>
-    <div class="container">
+    <div class="main">
       <nav class="tool-bar">
-        <div class="axe tool">
-        </div>
+        <div class="axe tool"></div>
         <div class="shovel tool"></div>
         <div class="pickaxe tool"></div>
-        <div class="inventory"></div>
+        <div class="inventoryTile" id="inventoryTile"></div>
       </nav>
-
       <div class="start">
         <button class="start-btn">START</button>
       </div>
-      <div class="main"></div>
+      <div id="playField">
+      </div>
+
     </div>
-    <script src="./raster_init.js"></script>
-    <script src="./script.js"></script>
+   
   </body>
 </html>
