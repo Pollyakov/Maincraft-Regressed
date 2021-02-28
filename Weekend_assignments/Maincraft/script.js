@@ -12,7 +12,12 @@ const startSelfDelete = () => {
 const startBtn = document.querySelector(".start-btn");
 startBtn.addEventListener("click", startSelfDelete);
 
-//PLAYFIELD
+
+
+
+document.addEventListener("DOMContentLoaded", evt => {
+
+    //PLAYFIELD
 const playField = document.querySelector('#playField');
 const dx = (playField.clientWidth-12)/nTiles;
 
@@ -38,7 +43,7 @@ const onTileClick = (event) => {
       tile.style.backgroundColor = tileColors[0];
       inventoryTile.style.backgroundColor = tileColor;
     }
-};
+}
 
 const drawTile = colorIndex => {
     let tile = document.createElement('div');
@@ -55,7 +60,6 @@ const init = () => {
     raster.forEach((item, ind) => {
        drawTile(item);
     });
-
  }
 
  // EVENT-LISTENERS
@@ -63,6 +67,13 @@ const init = () => {
     let inventoryTileColor = inventoryTile.style.backgroundColor;
     if (inventoryTileColor != 'black') inventoryTileClicked = true;
 });
+
+
+    // INIT
+    init();
+
+});
+
 
 
 
